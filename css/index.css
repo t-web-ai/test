@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
+}
+
+:root {
+    --primary: #8bc34a;
+    --secondary: rgba(238, 238, 238, 0.705);
+    --hover: gray;
+    --active: #98be6c;
 }
