@@ -9,6 +9,6 @@ $("document").ready(function () {
         setTimeout(() => {
             slide[0].remove();
             imageSlide.append(firstNode);
-        }, 500);
-    }, 1500);
+        }, 1000);
+    }, 3000);
 });
