@@ -103,11 +103,13 @@ body::-webkit-scrollbar {
     flex-basis: 100px;
     position: relative;
 }
+
 @media screen and (max-width: 400px) {
     .menu-list>div {
         text-align: left;
     }
 }
+
 @media screen and (max-width: 500px) {
     .menu-list>div {
         flex-basis: 100%;
@@ -125,3 +127,63 @@ body::-webkit-scrollbar {
 }
 
 /* menu bar - end */
+/* description box - start */
+.description-box {
+    width: 100%;
+}
+
+.description-box>.slide-outer-box {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    overflow: hidden;
+    float: left;
+}
+
+@media screen and (max-width: 550px) {
+    .description-box>.slide-outer-box {
+        width: 100%;
+    }
+}
+
+
+.slide-outer-box>.slide-inner-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.slide-inner-box>.slide {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    scroll-snap-align: center;
+    transition: 0.2s;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .slide-inner-box>.slide {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .slide-inner-box>.slide {
+        height: 200px;
+    }
+}
+
+.slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1 {
+    text-align: justify;
+    padding: 1.5rem;
+}
+/* description box - end */
