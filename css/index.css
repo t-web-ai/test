@@ -161,7 +161,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
     height: 300px;
     scroll-snap-align: center;
-    transition: 0.2s;
+    transition: margin-left 1s;
     flex-shrink: 0;
 }
 
